@@ -1,19 +1,6 @@
 {
-  "author": "Mike D Pilsbury <mike.pilsbury@gmail.com>",
-  "contributors": [
-    "Alex Robson",
-    "Arthur Schreiber",
-    "Bret Copeland <bret@atlantisflight.org> (https://github.com/bretcope)",
-    "Bryan Ross <bryan@rossipedia.com> (https://github.com/rossipedia)",
-    "Ciaran Jessup <ciaranj@gmail.com>",
-    "Cort Fritz <cfritz@caa.com>",
-    "lastonesky",
-    "Patrik Simek <patrik@patriksimek.cz>",
-    "Phil Dodderidge <pdodde@poyntz.com>",
-    "Zach Aller"
-  ],
-  "name": "tedious",
-  "description": "A TDS driver, for connecting to MS SQLServer databases.",
+  "name": "@statsig/tedious",
+  "description": "A fork of tedious that supports Fabric OBO auth user impersonation",
   "keywords": [
     "sql",
     "database",
@@ -24,22 +11,18 @@
     "msnodesql",
     "azure"
   ],
-  "homepage": "https://github.com/tediousjs/tedious",
-  "bugs": "https://github.com/tediousjs/tedious/issues",
+  "homepage": "https://github.com/statsig-io/tedious",
+  "bugs": "https://github.com/statsig-io/tedious/issues",
   "license": "MIT",
-  "version": "0.0.0-dev",
+  "version": "0.1.0",
   "main": "./lib/tedious.js",
   "types": "./lib/tedious.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tediousjs/tedious.git"
+    "url": "git+https://github.com/statsig-io/tedious.git"
   },
   "engines": {
     "node": ">=18.17"
-  },
-  "publishConfig": {
-    "tag": "next",
-    "provenance": true
   },
   "dependencies": {
     "@azure/core-auth": "^1.7.2",
